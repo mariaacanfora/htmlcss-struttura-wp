@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 920px;
+    margin: auto;
+}
+
+header .container{
+    height: 80px;
+    background-color: rgb(229,121,230);
+}
+
+main .container{
+    height: 200px;
+}
+
+aside.container{
+    background-color: rgb(225,214,122);
+}
+
+
+section.container{
+    background-color: rgb(171,207,231);
+}
+
+footer .container{
+    height: 40px;
+    background-color: rgb(136,1,254);
+}
