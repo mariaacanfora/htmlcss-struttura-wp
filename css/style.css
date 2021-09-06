@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --margin: 8px;
+}
+
 .clearfix::after{
     content: "";
     display: table;
@@ -18,22 +22,53 @@
 header .container{
     height: 80px;
     background-color: rgb(229,121,230);
+    margin: var(--margin) auto;
 }
 
 main .container{
-    height: 200px;
+    height: 300px;
 }
 
 aside.container{
     background-color: rgb(225,214,122);
+    margin: calc(2*var(--margin)) auto;
 }
 
 
 section.container{
     background-color: rgb(171,207,231);
+    margin-bottom: var(--margin);
+    position: relative;
 }
 
 footer .container{
     height: 40px;
     background-color: rgb(136,1,254);
 }
+
+.title-row{
+    height: 15%;
+    width: 100%;
+}
+
+.column{
+    border: 12px solid rgb(0,134,255);
+    height: calc(300px - 15 * 300px / 100);
+    float: left;
+}
+
+.column.column1{
+    border-left: none;
+    width: 25%;
+ }
+
+ .column.column2{
+    border-left: none;
+    border-right: none;
+    width: 50%;
+ }
+
+ .column.column3{
+    border-right: none;
+    width: 25%; 
+ }
